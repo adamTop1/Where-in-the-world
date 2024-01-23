@@ -12,7 +12,7 @@ const Countries = ({ selectedRegion, searchTerm }: PropsType) => {
 
 	return (
 		<div className='flex justify-center'>
-			<div className='grid grid-cols-1 gap-10 mx-14 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5'>
+			<div className='grid grid-cols-1 gap-10 mx-14 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5'>
 				{searchedFilteredCountries.map(country => (
 					<div className='grid grid-rows-2 pb-2 my-4 bg-gray-700 shadow-lg h-8/12 rounded-xl' key={country.name}>
 						<div className='flex flex-col items-center md:flex-row'>
@@ -36,7 +36,7 @@ const Countries = ({ selectedRegion, searchTerm }: PropsType) => {
 								</p>
 							)}
 							<Link to={`/country/${country.name}`}>
-								<button className='px-4 py-2 mt-4 text-lg font-semibold text-white bg-gray-800 rounded shadow-lg'>
+								<button className='px-4 py-2 mt-6 mb-4 text-lg font-semibold text-white bg-gray-800 rounded shadow-lg'>
 									Learn More
 								</button>
 							</Link>

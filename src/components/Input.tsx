@@ -8,7 +8,7 @@ function Input() {
 
 	return (
 		<>
-			<div className='flex items-center justify-center py-6 '>
+			<div className='flex items-center justify-center py-6 m-auto my-2 lg:w-10/12 xl:w-8/12 '>
 				{/* add search bar icon bg-right bg-no-repeat bg-cover bg-search-bar */}
 				<input
 					onChange={e => {
