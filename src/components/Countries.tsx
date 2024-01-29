@@ -43,6 +43,11 @@ const Countries = ({ selectedRegion, searchTerm }: PropsType) => {
 						</div>
 					</div>
 				))}
+				{searchedFilteredCountries.length === 0 && (
+					<div className='flex items-center justify-center h-96'>
+						<h1 className='text-3xl font-semibold text-white'>No Country Found</h1>
+					</div>
+				)}
 			</div>
 		</div>
 	)
